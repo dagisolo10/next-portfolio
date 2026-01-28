@@ -29,10 +29,10 @@ export const projects = [
                     </MotionText>
                 </MotionScrollContainer>
                 <div className="flex gap-4">
-                    <Link href="https://your-jobapp-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
+                    <Link href="https://job-application-next.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                         Live Demo
                     </Link>
-                    <Link href="https://github.com/yourusername/job-tracker" target="_blank" className="text-neutral-400 hover:text-white">
+                    <Link href="https://github.com/dagisolo10/job-application" target="_blank" className="text-neutral-400 hover:text-white">
                         GitHub
                     </Link>
                 </div>
@@ -60,10 +60,10 @@ export const projects = [
                     <MotionIcon variant={posYSpringVariant} src={icons.tailwind.icon} alt="Tailwind Icon" />
                 </MotionScrollContainer>
                 <div className="flex gap-4">
-                    <Link href="https://your-expense-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
+                    <Link href="https://fullstack-expense-tracker-dagi.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                         Live Demo
                     </Link>
-                    <Link href="https://github.com/yourusername/expense-tracker" target="_blank" className="text-neutral-400 hover:text-white">
+                    <Link href="https://github.com/dagisolo10/expense-tracker" target="_blank" className="text-neutral-400 hover:text-white">
                         GitHub
                     </Link>
                 </div>
@@ -91,10 +91,10 @@ export const projects = [
                     <MotionIcon variant={posYSpringVariant} src={icons.tailwind.icon} alt="Tailwind Icon" />
                 </MotionScrollContainer>
                 <div className="flex gap-4">
-                    <Link href="https://your-notebase-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
+                    <Link href="https://full-stack-note-base.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                         Live Demo
                     </Link>
-                    <Link href="https://github.com/yourusername/notebase" target="_blank" className="text-neutral-400 hover:text-white">
+                    <Link href="https://github.com/dagisolo10/full-stack-note-app" target="_blank" className="text-neutral-400 hover:text-white">
                         GitHub
                     </Link>
                 </div>
@@ -125,10 +125,10 @@ export const projects = [
                     </MotionText>
                 </MotionScrollContainer>
                 <div className="flex gap-4">
-                    <Link href="https://your-chatapp-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
+                    <Link href="https://nodechat-app.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                         Live Demo
                     </Link>
-                    <Link href="https://github.com/yourusername/socket-chat" target="_blank" className="text-neutral-400 hover:text-white">
+                    <Link href="https://github.com/dagisolo10/chat-app" target="_blank" className="text-neutral-400 hover:text-white">
                         GitHub
                     </Link>
                 </div>
@@ -153,10 +153,10 @@ export const projects = [
                     <MotionIcon variant={posYSpringVariant} src={icons.css.icon} alt="CSS Icon" />
                 </MotionScrollContainer>
                 <div className="flex gap-4">
-                    <Link href="https://your-recipefinder-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
+                    <Link href="https://dagisolo-recipe-finder.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                         Live Demo
                     </Link>
-                    <Link href="https://github.com/yourusername/recipe-finder" target="_blank" className="text-neutral-400 hover:text-white">
+                    <Link href="https://github.com/dagisolo10/recipe-finder" target="_blank" className="text-neutral-400 hover:text-white">
                         GitHub
                     </Link>
                 </div>
@@ -184,10 +184,10 @@ export const projects = [
                         <MotionIcon variant={posYSpringVariant} src={icons.css.icon} alt="CSS Icon" />
                     </MotionScrollContainer>
                     <div className="flex gap-4">
-                        <Link href="https://your-quizapp-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
+                        <Link href="https://dagisolo-new-quiz-app.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                             Live Demo
                         </Link>
-                        <Link href="https://github.com/yourusername/quiz-app" target="_blank" className="text-neutral-400 hover:text-white">
+                        <Link href="https://github.com/dagisolo10/quiz-app" target="_blank" className="text-neutral-400 hover:text-white">
                             GitHub
                         </Link>
                     </div>
@@ -209,10 +209,10 @@ export const projects = [
                         <MotionIcon variant={posYSpringVariant} src={icons.css.icon} alt="CSS Icon" />
                     </MotionScrollContainer>
                     <div className="flex gap-4">
-                        <Link href="https://your-imagesearch-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
+                        <Link href="https://dagisolo-image-search-engine.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                             Live Demo
                         </Link>
-                        <Link href="https://github.com/yourusername/image-search" target="_blank" className="text-neutral-400 hover:text-white">
+                        <Link href="https://github.com/dagisolo10/image-search-engine" target="_blank" className="text-neutral-400 hover:text-white">
                             GitHub
                         </Link>
                     </div>
