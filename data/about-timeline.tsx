@@ -9,7 +9,7 @@ export const data = [
                 <MotionScrollText variant={posXVariant} tag="h1" className="mb-2 text-3xl">
                     Full Stack Transition
                 </MotionScrollText>
-                <MotionScrollText variant={posXVariant} tag="p" className="muted mb-4">
+                <MotionScrollText variant={posXVariant} tag="p" className="muted mb-4 text-sm md:text-base">
                     Currently bridging the gap between frontend and backend. After mastering the React ecosystem, I’ve moved into <span className="text-white">Full Stack Architecture</span>—utilizing Next.js APIs, Node.js, and MongoDB to build end-to-end applications.
                 </MotionScrollText>
                 <MotionScrollText variant={posXVariant} tag="p" className="muted mb-4">
@@ -36,7 +36,7 @@ export const data = [
                 <MotionScrollText variant={posXVariant} tag="h1" className="mb-2 text-3xl">
                     The Web Development Pivot
                 </MotionScrollText>
-                <MotionScrollText variant={posXVariant} tag="p" className="muted mb-4">
+                <MotionScrollText variant={posXVariant} tag="p" className="muted mb-4 text-sm md:text-base">
                     Transitioned from Python logic to the visual and interactive world of Web Development. Self-taught the fundamentals of the JavaScript ecosystem, focusing on React and Tailwind CSS to build modern, responsive interfaces.
                 </MotionScrollText>
                 <MotionScrollText variant={posXVariant} tag="p" className="border-l-foreground mb-8 border-l pl-2 text-sm text-neutral-500 italic">
@@ -52,7 +52,7 @@ export const data = [
                 <MotionScrollText variant={posXVariant} tag="h1" className="mb-2 text-3xl">
                     Academic Engineering Foundation
                 </MotionScrollText>
-                <MotionScrollText variant={posXVariant} tag="p" className="muted mb-4">
+                <MotionScrollText variant={posXVariant} tag="p" className="muted mb-4 text-sm md:text-base">
                     Began my 5-year journey in <span className="text-white">Electronic and Communication Engineering</span> at Adama Science and Technology University (ASTU).
                 </MotionScrollText>
                 <MotionScrollText variant={posXVariant} tag="p" className="muted mb-8">
@@ -68,7 +68,7 @@ export const data = [
                 <MotionScrollText variant={posXVariant} tag="h1" className="mb-2 text-3xl">
                     First Exposure (Age 6)
                 </MotionScrollText>
-                <MotionScrollText variant={posXVariant} tag="p" className="muted mb-8">
+                <MotionScrollText variant={posXVariant} tag="p" className="muted mb-8 text-sm md:text-base">
                     My journey started nearly two decades ago. Exposed to computers at just 6 years old, I developed an early intuition for technology. This lifelong curiosity is what eventually transformed a childhood interest into a career pursuit in Software Engineering.
                 </MotionScrollText>
             </div>

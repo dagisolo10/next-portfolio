@@ -75,7 +75,7 @@ export const projects = [
         content: (
             <MotionScrollContainer variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                    <MotionImage variant={imageVariant} src={`/projects/job.png`} alt="Kanban Job Tracker Screenshot" />
+                    <MotionImage variant={imageVariant} src={`/projects/note.png`} alt="Kanban Job Tracker Screenshot" />
                 </div>
                 <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                     NoteBase Sync
@@ -106,7 +106,7 @@ export const projects = [
         content: (
             <MotionScrollContainer variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                    <MotionImage variant={imageVariant} src={`/projects/job.png`} alt="Kanban Job Tracker Screenshot" />
+                    <MotionImage variant={imageVariant} src={`/projects/chat.png`} alt="Kanban Job Tracker Screenshot" />
                 </div>
                 <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                     Socket Chat
@@ -140,7 +140,7 @@ export const projects = [
         content: (
             <MotionScrollContainer variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                    <MotionImage variant={imageVariant} src={`/projects/job.png`} alt="Kanban Job Tracker Screenshot" />
+                    <MotionImage variant={imageVariant} src={`/projects/recipe.png`} alt="Kanban Job Tracker Screenshot" />
                 </div>
                 <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                     Recipe Finder
@@ -166,7 +166,8 @@ export const projects = [
     {
         title: "Core Logic",
         content: (
-            <MotionScrollContainer variant={containerVariant} className="grid min-h-70 grid-cols-1 gap-8 lg:grid-cols-2">
+            <MotionScrollContainer variant={containerVariant} className="flex min-h-70 flex-col gap-4 lg:flex-row">
+                {/* <MotionScrollContainer variant={containerVariant} className="grid min-h-70 grid-cols-1 gap-8 lg:grid-cols-2"> */}
                 <MotionInnerContainer variant={containerVariant} className="flex flex-col gap-3 overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6">
                     <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                         Quiz Engine
@@ -174,12 +175,15 @@ export const projects = [
                     <MotionText tag="p" variant={posXVariant} className="muted mb-4 text-neutral-400">
                         Vanilla JavaScript quiz app with four subjects, timed sessions, instant feedback, and dynamic result summaries.
                     </MotionText>
-                    <MotionScrollContainer variant={containerVariant} className="flex justify-evenly">
+                    <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
+                        <MotionImage variant={imageVariant} src={`/projects/quiz.png`} alt="Kanban Job Tracker Screenshot" />
+                    </div>
+                    <MotionScrollContainer variant={containerVariant} className="mt-auto flex items-center gap-8">
                         <MotionIcon variant={posYSpringVariant} src={icons.js.icon} alt="JavaScript Icon" />
                         <MotionIcon variant={posYSpringVariant} src={icons.html.icon} alt="HTML Icon" />
                         <MotionIcon variant={posYSpringVariant} src={icons.css.icon} alt="CSS Icon" />
                     </MotionScrollContainer>
-                    <div className="mt-auto flex gap-4">
+                    <div className="flex gap-4">
                         <Link href="https://your-quizapp-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                             Live Demo
                         </Link>
@@ -195,13 +199,16 @@ export const projects = [
                     <MotionText tag="p" variant={posXVariant} className="muted mb-4 text-neutral-400">
                         A responsive image discovery app using the Pexels API. Supports pagination, deep-link downloads, and detailed metadata views for each asset.
                     </MotionText>
-                    <MotionScrollContainer variant={containerVariant} className="flex justify-evenly">
+                    <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
+                        <MotionImage variant={imageVariant} src={`/projects/search.png`} alt="Kanban Job Tracker Screenshot" />
+                    </div>
+                    <span className="mb-2 rounded border border-neutral-700 bg-neutral-800 px-2 py-1 font-mono text-[10px] tracking-widest text-neutral-400 uppercase">Pexels API</span>
+                    <MotionScrollContainer variant={containerVariant} className="mt-auto flex items-center gap-8">
                         <MotionIcon variant={posYSpringVariant} src={icons.js.icon} alt="JavaScript Icon" />
                         <MotionIcon variant={posYSpringVariant} src={icons.html.icon} alt="HTML Icon" />
                         <MotionIcon variant={posYSpringVariant} src={icons.css.icon} alt="CSS Icon" />
                     </MotionScrollContainer>
-                    <span className="mt-2 rounded border border-neutral-700 bg-neutral-800 px-2 py-1 font-mono text-[10px] tracking-widest text-neutral-400 uppercase">Pexels API</span>
-                    <div className="mt-auto flex gap-4">
+                    <div className="flex gap-4">
                         <Link href="https://your-imagesearch-demo.vercel.app" target="_blank" className="text-blue-400 hover:underline">
                             Live Demo
                         </Link>

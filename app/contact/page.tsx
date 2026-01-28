@@ -9,7 +9,7 @@ export default function page() {
             <MotionText variant={negXVariant} tag="h1" className="mb-4">
                 Get in Touch — Let&apos;s Connect
             </MotionText>
-            <div className="flex items-start gap-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <ContactForm />
                 <ContactCards />
             </div>

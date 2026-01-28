@@ -6,12 +6,12 @@ import contactData from "@/data/contact-info";
 
 export default function ContactCards() {
     return (
-        <MotionContainer variant={containerVariant} tag="div" className="grid grid-cols-2 gap-y-12 p-6">
+        <MotionContainer variant={containerVariant} tag="div" className="grid grid-cols-1 gap-y-6 p-6 md:grid-cols-2">
             {contactData.map((data) => {
                 const Icon = data.icon;
                 if (data.label === "Addis Ababa, Ethiopia")
                     return (
-                        <MotionItem variant={posYVariant} key={data.label}>
+                        <MotionItem className="flex items-center gap-2" variant={posYVariant} key={data.label}>
                             <Icon className={`${data.color} size-6`} />
                             <p>{data.label}</p>
                         </MotionItem>

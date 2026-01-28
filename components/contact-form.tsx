@@ -56,7 +56,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div className="w-1/2">
+        <div className="">
             <MotionForm variant={containerVariant} onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <MotionItem variant={formItemVariant}>
                     <InputDiv type="text" id="name" formRef={formRef} label="Your name" placeholder="What's your good name?" />
