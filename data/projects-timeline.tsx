@@ -39,7 +39,7 @@ export const projects = [
         content: (
             <MotionScrollContainer key={"project-2"} variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                    <MotionImage variant={imageVariant} src={`/projects/job.png`} alt="Expense Tracker Screenshot" />
+                    <MotionImage variant={imageVariant} src={`/projects/expense.png`} alt="Expense Tracker Screenshot" />
                 </div>
                 <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                     Expense Tracker
