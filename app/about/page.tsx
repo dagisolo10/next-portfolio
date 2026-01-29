@@ -7,7 +7,7 @@ import { MotionCircle, MotionContainer, MotionInnerContainer, MotionText } from 
 
 export default function page() {
     return (
-        <main className="scrollbar-none overflow-auto pt-12 md:pt-8">
+        <main className="scrollbar-none overflow-auto pt-8">
             <MotionContainer tag="div" variant={containerVariant} className="flex flex-col gap-8 md:flex-row">
                 <div className="flex flex-col gap-4">
                     <MotionText tag="h1" variant={posXVariant} className="mb-4 leading-tight">
