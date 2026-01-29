@@ -6,7 +6,7 @@ import contactData from "@/data/contact-info";
 
 export default function ContactCards() {
     return (
-        <MotionContainer variant={containerVariant} tag="div" className="grid grid-cols-1 gap-y-6 p-6 md:grid-cols-2">
+        <MotionContainer variant={containerVariant} tag="div" className="grid grid-cols-1 gap-6 py-6 md:grid-cols-2">
             {contactData.map((data) => {
                 const Icon = data.icon;
                 if (data.label === "Addis Ababa, Ethiopia")
@@ -18,7 +18,7 @@ export default function ContactCards() {
                     );
                 return (
                     <MotionItem variant={posYVariant} className="flex items-center gap-2" key={data.label}>
-                        <Link className="flex items-center gap-2" href={data.value}>
+                        <Link className="flex items-center gap-2" target="_blank" href={data.value}>
                             <Icon className={`${data.color} size-6`} />
                             <p>{data.label}</p>
                         </Link>

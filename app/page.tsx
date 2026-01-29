@@ -8,7 +8,7 @@ import { MotionContainer, MotionCircle, MotionText, MotionInnerContainer } from 
 export default function Home() {
     return (
         //  First Container
-        <MotionContainer variant={containerVariant} tag="main" className="flex flex-col gap-2 overflow-auto pt-8 lg:overflow-hidden">
+        <MotionContainer variant={containerVariant} tag="main" className="flex flex-col gap-2 overflow-auto pt-12 md:pt-8 lg:overflow-hidden">
             <MotionText variant={negXVariant} tag="h1" className="font-bold">
                 <TypingText text={["Full Stack", "Front End", "Back End"]} />
                 <br />

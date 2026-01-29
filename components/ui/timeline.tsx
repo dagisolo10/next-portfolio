@@ -27,11 +27,11 @@ export const Timeline = ({ data, header, subHeader, hClassName = "" }: { data: T
 
     const titleVariant: Variants = {
         hidden: { opacity: 0, y: 40 },
-        show: { opacity: 1, y: 0, transition: { type: "spring", damping: 8 } },
+        show: { opacity: 1, y: 0, transition: { type: "spring", damping: 8, opacity: { duration: 3, ease: "easeOut" } } },
     };
     const headerVariant: Variants = {
         hidden: { opacity: 0, y: 60 },
-        show: { opacity: 1, y: 0, transition: { type: "spring", damping: 15 } },
+        show: { opacity: 1, y: 0, transition: { type: "spring", damping: 8 } },
     };
 
     return (

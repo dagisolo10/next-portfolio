@@ -46,8 +46,8 @@ export const MotionIcon = ({ src, alt, variant }: { src: string; alt: string; va
 );
 
 export const MotionImage = ({ src, alt, variant }: { src: string; alt: string; variant: Variants }) => (
-    <motion.div variants={variant} viewport={{ once: false, amount: 0.7 }}>
-        <Image src={src} alt={alt} width={500} height={720} />
+    <motion.div variants={variant} viewport={{ once: false, amount: 0.7 }} className="rounded-sm">
+        <Image src={src} alt={alt} width={500} height={720} className="rounded-inherit rounded-md border border-neutral-700" />
     </motion.div>
 );
 
@@ -98,13 +98,13 @@ export const MotionForm = ({ children, variant, className = "", onSubmit }: { ch
 export const MotionLink = ({ href, icon, text, variant, className = "" }: { href: string; icon?: ReactNode; text?: string; variant: Variants; className: string }) =>
     icon ? (
         <motion.div variants={variant}>
-            <Link className={className} href={href}>
+            <Link className={className} target="_blank" href={href}>
                 {icon}
             </Link>
         </motion.div>
     ) : (
         <motion.div variants={variant}>
-            <Link className={className} href={href}>
+            <Link className={className} target="_blank" href={href}>
                 {text}
             </Link>
         </motion.div>

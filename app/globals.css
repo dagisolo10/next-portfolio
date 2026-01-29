@@ -128,4 +128,7 @@
     .muted {
         @apply text-muted-foreground max-w-2xl text-sm;
     }
+    .rounded-inherit {
+        border-radius: inherit;
+    }
 }

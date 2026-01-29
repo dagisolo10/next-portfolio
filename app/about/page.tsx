@@ -7,7 +7,7 @@ import { MotionCircle, MotionContainer, MotionInnerContainer, MotionText } from 
 
 export default function page() {
     return (
-        <main className="scrollbar-none overflow-auto pt-8">
+        <main className="scrollbar-none overflow-auto pt-12 md:pt-8">
             <MotionContainer tag="div" variant={containerVariant} className="flex flex-col gap-8 md:flex-row">
                 <div className="flex flex-col gap-4">
                     <MotionText tag="h1" variant={posXVariant} className="mb-4 leading-tight">
@@ -25,7 +25,7 @@ export default function page() {
 
                     <MotionInnerContainer variant={containerVariant} className="mt-6 grid grid-cols-2 gap-x-8 gap-y-4 text-xs font-medium tracking-widest text-neutral-500 uppercase md:grid-cols-3">
                         <MotionText variant={posXVariant} tag="div">
-                            Age: <span className="text-white">20</span>
+                            Age: <span className="text-white">21</span>
                         </MotionText>
                         <MotionText variant={posXVariant} tag="div">
                             Based: <span className="text-white">Addis Ababa, ET</span>
@@ -37,7 +37,7 @@ export default function page() {
                             Experience: <span className="text-white">~1 Year</span>
                         </MotionText>
                         <MotionText variant={posXVariant} tag="div" className="border-t border-white/10 pt-2">
-                            Projects: <span className="text-white">12+ Built</span>
+                            Projects: <span className="text-white">10+ Built</span>
                         </MotionText>
                         <MotionText variant={posXVariant} tag="div" className="border-t border-white/10 pt-2">
                             Focus: <span className="text-white">Full Stack</span>
@@ -62,7 +62,7 @@ export default function page() {
                             I am currently a 3rd-year student at Adama Science & Tech University (ASTU). While my degree focuses on <span className="text-white italic">Electronics and Communication</span>, my passion lies in <span className="text-primary font-medium">Software Engineering</span>.
                         </p>
                         <p className="mt-4 text-sm leading-relaxed text-neutral-400">
-                            Balancing a rigorous 5-year engineering curriculum with self-taught web development has taught me one thing: **how to learn complex systems fast.** I apply the analytical problem-solving skills from my studies to build clean, logical, and scalable web applications.
+                            Balancing a rigorous 5-year engineering curriculum with self-taught web development has taught me one thing: <b>how to learn complex systems fast</b>. I apply the analytical problem-solving skills from my studies to build clean, logical, and scalable web applications.
                         </p>
                     </div>
                     <div className="border-foreground/10 bg-primary/10 rounded-xl border p-4">

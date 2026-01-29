@@ -1,14 +1,13 @@
 import icons from "../lib/icons";
 
-import Link from "next/link";
 import { containerVariant, imageVariant, posXVariant, posYSpringVariant } from "@/components/motion/motion-data";
-import { MotionText, MotionIcon, MotionScrollContainer, MotionImage, MotionInnerContainer } from "@/components/motion/motion-wrappers";
+import { MotionText, MotionIcon, MotionScrollContainer, MotionImage, MotionInnerContainer, MotionLink } from "@/components/motion/motion-wrappers";
 
 export const projects = [
     {
         title: "Job Application",
         content: (
-            <MotionScrollContainer variant={containerVariant} className="min-h-70">
+            <MotionScrollContainer key={"project-1"} variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
                     <MotionImage variant={imageVariant} src={`/projects/job.png`} alt="Kanban Job Tracker Screenshot" />
                 </div>
@@ -28,29 +27,25 @@ export const projects = [
                         Stack Auth
                     </MotionText>
                 </MotionScrollContainer>
-                <div className="flex gap-4">
-                    <Link href="https://job-application-next.vercel.app" target="_blank" className="text-blue-400 hover:underline">
-                        Live Demo
-                    </Link>
-                    <Link href="https://github.com/dagisolo10/job-application" target="_blank" className="text-neutral-400 hover:text-white">
-                        GitHub
-                    </Link>
-                </div>
+                <MotionScrollContainer variant={containerVariant} className="flex gap-4">
+                    <MotionLink variant={posXVariant} href="https://job-application-next.vercel.app" text="Live Demo" className="text-blue-400 hover:underline" />
+                    <MotionLink variant={posXVariant} href="https://github.com/dagisolo10/job-application" text="GitHub" className="text-neutral-400 hover:text-white" />
+                </MotionScrollContainer>
             </MotionScrollContainer>
         ),
     },
     {
         title: "Expense Tracker",
         content: (
-            <MotionScrollContainer variant={containerVariant} className="min-h-70">
+            <MotionScrollContainer key={"project-2"} variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                    <MotionImage variant={imageVariant} src={`/projects/job.png`} alt="Kanban Job Tracker Screenshot" />
+                    <MotionImage variant={imageVariant} src={`/projects/job.png`} alt="Expense Tracker Screenshot" />
                 </div>
                 <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                     Expense Tracker
                 </MotionText>
                 <MotionText tag="p" variant={posXVariant} className="muted mb-4 text-neutral-400">
-                    MERN-based tracker with custom JWT authentication. Includes dashboard analytics with Pie, Bar graph and Area charts, category-wise stats, profile management, and emoji-powered transaction lookup. Users can manage income, expenses, and full CRUD for transactions.
+                    MERN-based tracker with custom JWT authentication. Includes dashboard analytics with Pie, Bar graph and Area charts, category-wise stats, profile management, and emoji-powered transaction grouping. Users can manage income, expenses, and full CRUD for transactions.
                 </MotionText>
                 <MotionScrollContainer variant={containerVariant} className="mb-6 flex items-center gap-4">
                     <MotionIcon variant={posYSpringVariant} src={icons.mongo.icon} alt="MongoDB Icon" />
@@ -59,23 +54,19 @@ export const projects = [
                     <MotionIcon variant={posYSpringVariant} src={icons.node.icon} alt="Node.js Icon" />
                     <MotionIcon variant={posYSpringVariant} src={icons.tailwind.icon} alt="Tailwind Icon" />
                 </MotionScrollContainer>
-                <div className="flex gap-4">
-                    <Link href="https://fullstack-expense-tracker-dagi.vercel.app" target="_blank" className="text-blue-400 hover:underline">
-                        Live Demo
-                    </Link>
-                    <Link href="https://github.com/dagisolo10/expense-tracker" target="_blank" className="text-neutral-400 hover:text-white">
-                        GitHub
-                    </Link>
-                </div>
+                <MotionScrollContainer variant={containerVariant} className="flex gap-4">
+                    <MotionLink variant={posXVariant} href="https://fullstack-expense-tracker-dagi.vercel.app" text="Live Demo" className="text-blue-400 hover:underline" />
+                    <MotionLink variant={posXVariant} href="https://github.com/dagisolo10/expense-tracker" text="GitHub" className="text-neutral-400 hover:text-white" />
+                </MotionScrollContainer>
             </MotionScrollContainer>
         ),
     },
     {
         title: "NoteBase",
         content: (
-            <MotionScrollContainer variant={containerVariant} className="min-h-70">
+            <MotionScrollContainer key={"project-3"} variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                    <MotionImage variant={imageVariant} src={`/projects/note.png`} alt="Kanban Job Tracker Screenshot" />
+                    <MotionImage variant={imageVariant} src={`/projects/note.png`} alt="NoteBase Screenshot" />
                 </div>
                 <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                     NoteBase Sync
@@ -90,23 +81,19 @@ export const projects = [
                     <MotionIcon variant={posYSpringVariant} src={icons.node.icon} alt="Node.js Icon" />
                     <MotionIcon variant={posYSpringVariant} src={icons.tailwind.icon} alt="Tailwind Icon" />
                 </MotionScrollContainer>
-                <div className="flex gap-4">
-                    <Link href="https://full-stack-note-base.vercel.app" target="_blank" className="text-blue-400 hover:underline">
-                        Live Demo
-                    </Link>
-                    <Link href="https://github.com/dagisolo10/full-stack-note-app" target="_blank" className="text-neutral-400 hover:text-white">
-                        GitHub
-                    </Link>
-                </div>
+                <MotionScrollContainer variant={containerVariant} className="flex gap-4">
+                    <MotionLink variant={posXVariant} href="https://full-stack-note-base.vercel.app" text="Live Demo" className="text-blue-400 hover:underline" />
+                    <MotionLink variant={posXVariant} href="https://github.com/dagisolo10/full-stack-note-app" text="GitHub" className="text-neutral-400 hover:text-white" />
+                </MotionScrollContainer>
             </MotionScrollContainer>
         ),
     },
     {
         title: "Socket Chat",
         content: (
-            <MotionScrollContainer variant={containerVariant} className="min-h-70">
+            <MotionScrollContainer key={"project-4"} variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                    <MotionImage variant={imageVariant} src={`/projects/chat.png`} alt="Kanban Job Tracker Screenshot" />
+                    <MotionImage variant={imageVariant} src={`/projects/chat.png`} alt="Socket Chat Screenshot" />
                 </div>
                 <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                     Socket Chat
@@ -124,23 +111,19 @@ export const projects = [
                         Socket.io
                     </MotionText>
                 </MotionScrollContainer>
-                <div className="flex gap-4">
-                    <Link href="https://nodechat-app.vercel.app" target="_blank" className="text-blue-400 hover:underline">
-                        Live Demo
-                    </Link>
-                    <Link href="https://github.com/dagisolo10/chat-app" target="_blank" className="text-neutral-400 hover:text-white">
-                        GitHub
-                    </Link>
-                </div>
+                <MotionScrollContainer variant={containerVariant} className="flex gap-4">
+                    <MotionLink variant={posXVariant} href="https://nodechat-app.vercel.app" text="Live Demo" className="text-blue-400 hover:underline" />
+                    <MotionLink variant={posXVariant} href="https://github.com/dagisolo10/chat-app" text="GitHub" className="text-neutral-400 hover:text-white" />
+                </MotionScrollContainer>
             </MotionScrollContainer>
         ),
     },
     {
         title: "Recipe Finder",
         content: (
-            <MotionScrollContainer variant={containerVariant} className="min-h-70">
+            <MotionScrollContainer key={"project-5"} variant={containerVariant} className="min-h-70">
                 <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                    <MotionImage variant={imageVariant} src={`/projects/recipe.png`} alt="Kanban Job Tracker Screenshot" />
+                    <MotionImage variant={imageVariant} src={`/projects/recipe.png`} alt="Recipe Finder Screenshot" />
                 </div>
                 <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                     Recipe Finder
@@ -152,22 +135,17 @@ export const projects = [
                     <MotionIcon variant={posYSpringVariant} src={icons.react.icon} alt="React Icon" />
                     <MotionIcon variant={posYSpringVariant} src={icons.css.icon} alt="CSS Icon" />
                 </MotionScrollContainer>
-                <div className="flex gap-4">
-                    <Link href="https://dagisolo-recipe-finder.vercel.app" target="_blank" className="text-blue-400 hover:underline">
-                        Live Demo
-                    </Link>
-                    <Link href="https://github.com/dagisolo10/recipe-finder" target="_blank" className="text-neutral-400 hover:text-white">
-                        GitHub
-                    </Link>
-                </div>
+                <MotionScrollContainer variant={containerVariant} className="flex gap-4">
+                    <MotionLink variant={posXVariant} href="https://dagisolo-recipe-finder.vercel.app" text="Live Demo" className="text-blue-400 hover:underline" />
+                    <MotionLink variant={posXVariant} href="https://github.com/dagisolo10/recipe-finder" text="GitHub" className="text-neutral-400 hover:text-white" />
+                </MotionScrollContainer>
             </MotionScrollContainer>
         ),
     },
     {
         title: "Core Logic",
         content: (
-            <MotionScrollContainer variant={containerVariant} className="flex min-h-70 flex-col gap-4 lg:flex-row">
-                {/* <MotionScrollContainer variant={containerVariant} className="grid min-h-70 grid-cols-1 gap-8 lg:grid-cols-2"> */}
+            <MotionScrollContainer key={"project-6"} variant={containerVariant} className="flex min-h-70 flex-col gap-4 lg:flex-row">
                 <MotionInnerContainer variant={containerVariant} className="flex flex-col gap-3 overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6">
                     <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                         Quiz Engine
@@ -175,47 +153,41 @@ export const projects = [
                     <MotionText tag="p" variant={posXVariant} className="muted mb-4 text-neutral-400">
                         Vanilla JavaScript quiz app with four subjects, timed sessions, instant feedback, and dynamic result summaries.
                     </MotionText>
-                    <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                        <MotionImage variant={imageVariant} src={`/projects/quiz.png`} alt="Kanban Job Tracker Screenshot" />
+                    <div className="mt-auto mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
+                        <MotionImage variant={imageVariant} src={`/projects/quiz.png`} alt="Quiz Engine Screenshot" />
                     </div>
-                    <MotionScrollContainer variant={containerVariant} className="mt-auto flex items-center gap-8">
+                    <MotionScrollContainer variant={containerVariant} className="flex items-center gap-8">
                         <MotionIcon variant={posYSpringVariant} src={icons.js.icon} alt="JavaScript Icon" />
                         <MotionIcon variant={posYSpringVariant} src={icons.html.icon} alt="HTML Icon" />
                         <MotionIcon variant={posYSpringVariant} src={icons.css.icon} alt="CSS Icon" />
                     </MotionScrollContainer>
-                    <div className="flex gap-4">
-                        <Link href="https://dagisolo-new-quiz-app.vercel.app" target="_blank" className="text-blue-400 hover:underline">
-                            Live Demo
-                        </Link>
-                        <Link href="https://github.com/dagisolo10/quiz-app" target="_blank" className="text-neutral-400 hover:text-white">
-                            GitHub
-                        </Link>
-                    </div>
+                    <MotionScrollContainer variant={containerVariant} className="flex gap-4">
+                        <MotionLink variant={posXVariant} href="https://dagisolo-new-quiz-app.vercel.app" text="Live Demo" className="text-blue-400 hover:underline" />
+                        <MotionLink variant={posXVariant} href="https://github.com/dagisolo10/quiz-app" text="GitHub" className="text-neutral-400 hover:text-white" />
+                    </MotionScrollContainer>
                 </MotionInnerContainer>
                 <MotionInnerContainer variant={containerVariant} className="flex flex-col gap-3 overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6">
                     <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold text-white">
                         Image Search UI
                     </MotionText>
-                    <MotionText tag="p" variant={posXVariant} className="muted mb-4 text-neutral-400">
+                    <MotionText tag="p" variant={posXVariant} className="muted mb-2 text-neutral-400">
                         A responsive image discovery app using the Pexels API. Supports pagination, deep-link downloads, and detailed metadata views for each asset.
                     </MotionText>
-                    <div className="mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
-                        <MotionImage variant={imageVariant} src={`/projects/search.png`} alt="Kanban Job Tracker Screenshot" />
+                    <MotionText tag="span" variant={posXVariant} className="mb-2 rounded border border-neutral-700 bg-neutral-800 px-2 py-1 font-mono text-[10px] tracking-widest text-neutral-400 uppercase">
+                        Pexels API
+                    </MotionText>
+                    <div className="mt-auto mb-6 transition-all duration-300 lg:opacity-50 lg:grayscale lg:hover:opacity-100 lg:hover:grayscale-0">
+                        <MotionImage variant={imageVariant} src={`/projects/search.png`} alt="Image Search UI Screenshot" />
                     </div>
-                    <span className="mb-2 rounded border border-neutral-700 bg-neutral-800 px-2 py-1 font-mono text-[10px] tracking-widest text-neutral-400 uppercase">Pexels API</span>
-                    <MotionScrollContainer variant={containerVariant} className="mt-auto flex items-center gap-8">
+                    <MotionScrollContainer variant={containerVariant} className="flex items-center gap-8">
                         <MotionIcon variant={posYSpringVariant} src={icons.js.icon} alt="JavaScript Icon" />
                         <MotionIcon variant={posYSpringVariant} src={icons.html.icon} alt="HTML Icon" />
                         <MotionIcon variant={posYSpringVariant} src={icons.css.icon} alt="CSS Icon" />
                     </MotionScrollContainer>
-                    <div className="flex gap-4">
-                        <Link href="https://dagisolo-image-search-engine.vercel.app" target="_blank" className="text-blue-400 hover:underline">
-                            Live Demo
-                        </Link>
-                        <Link href="https://github.com/dagisolo10/image-search-engine" target="_blank" className="text-neutral-400 hover:text-white">
-                            GitHub
-                        </Link>
-                    </div>
+                    <MotionScrollContainer variant={containerVariant} className="flex gap-4">
+                        <MotionLink variant={posXVariant} href="https://dagisolo-image-search-engine.vercel.app" text="Live Demo" className="text-blue-400 hover:underline" />
+                        <MotionLink variant={posXVariant} href="https://github.com/dagisolo10/image-search-engine" text="GitHub" className="text-neutral-400 hover:text-white" />
+                    </MotionScrollContainer>
                 </MotionInnerContainer>
             </MotionScrollContainer>
         ),
