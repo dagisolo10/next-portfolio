@@ -45,7 +45,7 @@ export default function page() {
                     </MotionInnerContainer>
                 </div>
                 <MotionCircle variant={circleVariant}>
-                    <Image className="size-80 object-cover" src={`/images/img.jpg`} alt="Profile" width={1080} height={720} />
+                    <Image className="size-80 rounded-full object-top object-cover" src={`/images/profile.jpg`} alt="Profile" width={1080} height={720} />
                 </MotionCircle>
             </MotionContainer>
 
