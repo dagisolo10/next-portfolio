@@ -15,7 +15,7 @@ interface LinkProps {
     icon?: ReactNode;
     text?: string;
     variant: Variants;
-    className: string;
+    className?: string;
 }
 
 export const MotionContainer = ({ children, variant, className = "" }: ContainerPops) => (

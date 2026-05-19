@@ -36,7 +36,7 @@ export default function Footer() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="transition-colors duration-200 hover:text-white"
-                        aria-label="Twitter"
+                        aria-label="Telegram"
                     >
                         <TbBrandTelegram className="size-4" />
                     </Link>

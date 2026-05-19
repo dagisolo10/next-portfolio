@@ -139,7 +139,11 @@
 
 @layer base {
     * {
-        @apply border-border outline-ring/50 scroll-smooth font-sans;
+        @apply border-border outline-ring/50 font-sans;
+    }
+
+    html {
+        @apply scroll-smooth;
     }
 
     body {

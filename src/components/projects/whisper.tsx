@@ -5,7 +5,7 @@ import icons from "@/lib/icons";
 import { CgLock } from "react-icons/cg";
 import { TbMessages } from "react-icons/tb";
 
-export  function Whisper() {
+export function Whisper() {
     return (
         <MotionScrollContainer key={"project-3"} variant={containerVariant} className="min-h-70">
             <div className="relative mb-6 flex h-48 items-center justify-center overflow-hidden rounded-xl bg-[linear-gradient(135deg,#0f172a_0%,#1e3a5f_50%,#0f766e_100%)] lg:h-72">
@@ -47,7 +47,10 @@ export  function Whisper() {
             </MotionScrollContainer>
 
             <MotionScrollContainer variant={containerVariant} className="flex gap-4">
-                <MotionLink variant={posXVariant} href="#" text="Coming Soon" className="text-neutral-500 italic" />
+                {/* <MotionLink variant={posXVariant} href="#" text="Coming Soon" className="text-neutral-500 italic" /> */}
+                <MotionText tag="span" variant={posXVariant} className="text-neutral-500 italic">
+                    Coming Soon
+                </MotionText>
                 <MotionLink
                     variant={posXVariant}
                     href="https://github.com/dagisolo10"

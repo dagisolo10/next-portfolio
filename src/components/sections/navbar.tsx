@@ -3,7 +3,7 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useTopBar } from "../top-bar-provider";
 
-const NAV_LINKS = [
+export const NAV_LINKS = [
     { title: "Home", href: "#" },
     { title: "About", href: "#about" },
     { title: "Stack", href: "#stack" },
@@ -41,11 +41,10 @@ export default function NavBar() {
                     Hire Me
                 </a>
 
-                <button onClick={toggle} className="block md:hidden">
+                <button onClick={toggle} className="block md:hidden" aria-label="Open navigation menu">
                     <Menu className="size-5" />
                 </button>
             </div>
-            {/* </div> */}
         </nav>
     );
 }

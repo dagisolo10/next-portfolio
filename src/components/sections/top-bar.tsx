@@ -4,15 +4,7 @@ import { useTopBar } from "@/components/top-bar-provider";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import Link from "next/link";
-
-const NAV_LINKS = [
-    { title: "Home", href: "#" },
-    { title: "About", href: "#about" },
-    { title: "Stack", href: "#stack" },
-    { title: "Principles", href: "#principles" },
-    { title: "Projects", href: "#projects" },
-    { title: "Journey", href: "#journey" },
-];
+import { NAV_LINKS } from "./navbar";
 
 const linkVariants = {
     initial: { opacity: 0, y: 20 },
@@ -26,6 +18,9 @@ export default function TopBar() {
         <AnimatePresence>
             {show && (
                 <motion.div
+                    role="dialog"
+                    aria-modal="true"
+                    aria-label="Mobile navigation"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0, transition: { delay: 0.2 } }}
@@ -35,7 +30,7 @@ export default function TopBar() {
                         <Link href="#" className="font-syne text-xl font-bold tracking-tight" onClick={toggle}>
                             Dagmawi
                         </Link>
-                        <button onClick={toggle}>
+                        <button onClick={toggle} aria-label="Close navigation menu">
                             <X className="size-5" />
                         </button>
                     </div>

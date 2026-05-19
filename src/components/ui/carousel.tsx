@@ -91,6 +91,7 @@ function Carousel({ orientation = "horizontal", opts, setApi, plugins, className
         api.on("select", onSelect);
 
         return () => {
+            api?.off("reInit", onSelect);
             api?.off("select", onSelect);
         };
     }, [api, onSelect]);
@@ -108,7 +109,14 @@ function Carousel({ orientation = "horizontal", opts, setApi, plugins, className
                 canScrollNext,
             }}
         >
-            <div onKeyDownCapture={handleKeyDown} className={cn("relative", className)} role="region" aria-roledescription="carousel" data-slot="carousel" {...props}>
+            <div
+                onKeyDownCapture={handleKeyDown}
+                className={cn("relative", className)}
+                role="region"
+                aria-roledescription="carousel"
+                data-slot="carousel"
+                {...props}
+            >
                 {children}
             </div>
         </CarouselContext.Provider>
@@ -147,7 +155,11 @@ function CarouselPrevious({ className, variant = "outline", size = "icon-sm", ..
             data-slot="carousel-previous"
             variant={variant}
             size={size}
-            className={cn("absolute touch-manipulation rounded-full", orientation === "horizontal" ? "top-1/2 -left-12 -translate-y-1/2" : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
+            className={cn(
+                "absolute touch-manipulation rounded-full",
+                orientation === "horizontal" ? "top-1/2 -left-12 -translate-y-1/2" : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+                className,
+            )}
             disabled={!canScrollPrev}
             onClick={scrollPrev}
             {...props}

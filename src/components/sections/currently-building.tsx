@@ -68,7 +68,7 @@ export default function CurrentlyBuilding() {
                             </div>
                             <div className="min-w-0 flex-1">
                                 <div className="mb-1 flex flex-wrap items-center gap-2">
-                                    <MotionScrollText tag="h1" variant={posYVariant} className="text-base font-semibold">
+                                    <MotionScrollText tag="p" variant={posYVariant} className="text-base font-semibold">
                                         {item.title}
                                     </MotionScrollText>
                                     <MotionScrollText

@@ -9,7 +9,7 @@ import { CgArrowRight } from "react-icons/cg";
 
 export default function Hero() {
     return (
-        <MotionScrollContainer variant={containerVariant} className="relative flex flex-col gap-2 space-y-4 border">
+        <MotionScrollContainer variant={containerVariant} className="relative flex flex-col gap-2 space-y-4">
             <MotionText variant={negXVariant} tag="h1" className="font-bold">
                 <TypingText text={["Realtime Systems", "Scalable Architectures", "Product Engineering", "Web + Mobile"]} />
                 <br />
@@ -40,7 +40,7 @@ export default function Hero() {
                     </Link>
                 </MotionCircle>
 
-                <a href="#about" className="flex justify-center pt-8 sm:pt-12">
+                <a href="#about" aria-label="Scroll to About section" className="flex justify-center pt-8 sm:pt-12">
                     <ScrollIndicator />
                 </a>
             </MotionInnerContainer>

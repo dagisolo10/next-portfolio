@@ -16,7 +16,7 @@ export function Strivin() {
                     <Dumbbell className="size-14 text-emerald-400" />
                     <div className="flex flex-col items-start gap-1">
                         <div className="flex items-center gap-2">
-                            <span className="text-2xl font-bold text-white">Stivin</span>
+                            <span className="text-2xl font-bold text-white">Strivin</span>
                             <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2 py-0.5 font-mono text-[9px] tracking-widest text-emerald-400 uppercase">
                                 In Development
                             </span>
@@ -34,7 +34,7 @@ export function Strivin() {
             </div>
 
             <MotionText tag="h1" variant={posXVariant} className="mb-2 text-3xl font-bold">
-                Stivin Workout Tracker
+                Strivin Workout Tracker
             </MotionText>
 
             <MotionText tag="p" variant={posXVariant} className="muted mb-4 text-neutral-400">
@@ -72,7 +72,10 @@ export function Strivin() {
             </MotionScrollContainer>
 
             <MotionScrollContainer variant={containerVariant} className="flex gap-4">
-                <MotionLink variant={posXVariant} href="#" text="Coming Soon" className="text-neutral-500 italic" />
+                {/* <MotionLink variant={posXVariant} href="#" text="Coming Soon" className="text-neutral-500 italic" /> */}
+                <MotionText tag="span" variant={posXVariant} className="text-neutral-500 italic">
+                    Coming Soon
+                </MotionText>
                 <MotionLink
                     variant={posXVariant}
                     href="https://github.com/dagisolo10"

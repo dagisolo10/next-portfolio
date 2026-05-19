@@ -74,7 +74,10 @@ export function Evently() {
             </MotionScrollContainer>
 
             <MotionScrollContainer variant={containerVariant} className="flex gap-4">
-                <MotionLink variant={posXVariant} href="#" text="Coming Soon" className="text-neutral-500 italic" />
+                {/* <MotionLink variant={posXVariant} href="#" text="Coming Soon" className="text-neutral-500 italic" /> */}
+                <MotionText tag="span" variant={posXVariant} className="text-neutral-500 italic">
+                    Coming Soon
+                </MotionText>
                 <MotionLink
                     variant={posXVariant}
                     href="https://github.com/dagisolo10"

@@ -4,7 +4,7 @@ import { MotionCircle, MotionInnerContainer, MotionScrollContainer, MotionText }
 
 export default function About() {
     const today = new Date();
-    const birthDate = new Date("2004-11-02:00:00:00.000Z");
+    const birthDate = new Date("2004-11-02T00:00:00.000Z");
     const secondsInYear = 1000 * 3600 * 24 * 365;
     const age = Math.floor((today.getTime() - birthDate.getTime()) / secondsInYear);
 
