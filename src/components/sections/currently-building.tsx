@@ -53,7 +53,7 @@ export default function CurrentlyBuilding() {
                 </MotionScrollText>
             </MotionScrollContainer>
 
-            <MotionContainer tag="div" variant={containerVariant} className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <MotionContainer variant={containerVariant} className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 {buildingItems.map((item) => {
                     const Icon = item.icon;
 

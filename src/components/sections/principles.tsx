@@ -55,7 +55,7 @@ export default function Principles() {
                 </MotionScrollText>
             </MotionScrollContainer>
 
-            <MotionContainer tag="div" variant={containerVariant} className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <MotionContainer variant={containerVariant} className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {principles.map((principle) => {
                     const Icon = principle.icon;
 

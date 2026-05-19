@@ -4,46 +4,45 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ComponentType, FormEventHandler, ReactNode } from "react";
 
-export const MotionContainer = ({
-    children,
-    tag,
-    variant,
-    className = "",
-}: {
+interface ContainerPops {
     children: ReactNode;
-    tag: "main" | "div";
     variant: Variants;
     className?: string;
-}) =>
-    tag === "main" ? (
-        <motion.main variants={variant} initial="initial" animate="final" className={className}>
-            {children}
-        </motion.main>
-    ) : (
-        <motion.div variants={variant} initial="initial" animate="final" className={className}>
-            {children}
-        </motion.div>
-    );
+}
 
-export const MotionScrollContainer = ({ children, variant, className = "" }: { children: React.ReactNode; variant: Variants; className?: string }) => (
+interface LinkProps {
+    href: string;
+    icon?: ReactNode;
+    text?: string;
+    variant: Variants;
+    className: string;
+}
+
+export const MotionContainer = ({ children, variant, className = "" }: ContainerPops) => (
+    <motion.div variants={variant} initial="initial" animate="final" className={className}>
+        {children}
+    </motion.div>
+);
+
+export const MotionScrollContainer = ({ children, variant, className = "" }: ContainerPops) => (
     <motion.div variants={variant} initial="initial" whileInView="final" viewport={{ once: false, amount: 0.1 }} className={className}>
         {children}
     </motion.div>
 );
 
-export const MotionInnerContainer = ({ children, variant, className = "" }: { children: React.ReactNode; variant: Variants; className?: string }) => (
+export const MotionInnerContainer = ({ children, variant, className = "" }: ContainerPops) => (
     <motion.div variants={variant} className={className}>
         {children}
     </motion.div>
 );
 
-export const MotionCircle = ({ children, variant, className }: { children: React.ReactNode; variant: Variants; className?: string }) => (
+export const MotionCircle = ({ children, variant, className }: ContainerPops) => (
     <motion.div variants={variant} whileHover={{ scale: 1.1, transition: { type: "spring", damping: 16, stiffness: 250 } }} className={className}>
         {children}
     </motion.div>
 );
 
-export const MotionItem = ({ children, variant, className = "" }: { children: React.ReactNode; variant: Variants; className?: string }) => (
+export const MotionItem = ({ children, variant, className = "" }: ContainerPops) => (
     <motion.div variants={variant} className={className}>
         {children}
     </motion.div>
@@ -61,7 +60,7 @@ export const MotionImage = ({ src, alt, variant }: { src: string; alt: string; v
     </motion.div>
 );
 
-export const MotionText = ({ children, tag, variant, className = "" }: { children: React.ReactNode; tag: string; variant: Variants; className?: string }) =>
+export const MotionText = ({ children, tag, variant, className = "" }: ContainerPops & { tag: string }) =>
     tag === "h1" ? (
         <motion.h1 variants={variant} className={className}>
             {children}
@@ -80,17 +79,7 @@ export const MotionText = ({ children, tag, variant, className = "" }: { childre
         </motion.div>
     );
 
-export const MotionScrollText = ({
-    children,
-    tag,
-    variant,
-    className = "",
-}: {
-    children: React.ReactNode;
-    tag: "h1" | "p" | "span" | "div";
-    variant: Variants;
-    className?: string;
-}) =>
+export const MotionScrollText = ({ children, tag, variant, className = "" }: ContainerPops & { tag: "h1" | "p" | "span" | "div" }) =>
     tag === "h1" ? (
         <motion.h1 variants={variant} initial="initial" whileInView="final" viewport={{ once: false, amount: 0.2 }} className={className}>
             {children}
@@ -109,35 +98,13 @@ export const MotionScrollText = ({
         </motion.div>
     );
 
-export const MotionForm = ({
-    children,
-    variant,
-    className = "",
-    onSubmit,
-}: {
-    children: React.ReactNode;
-    variant: Variants;
-    className?: string;
-    onSubmit: FormEventHandler<HTMLFormElement>;
-}) => (
+export const MotionForm = ({ children, variant, className = "", onSubmit }: ContainerPops & { onSubmit: FormEventHandler<HTMLFormElement> }) => (
     <motion.form onSubmit={onSubmit} variants={variant} initial="initial" animate="final" className={className}>
         {children}
     </motion.form>
 );
 
-export const MotionLink = ({
-    href,
-    icon,
-    text,
-    variant,
-    className = "",
-}: {
-    href: string;
-    icon?: ReactNode;
-    text?: string;
-    variant: Variants;
-    className: string;
-}) =>
+export const MotionLink = ({ href, icon, text, variant, className = "" }: LinkProps) =>
     icon ? (
         <motion.div variants={variant}>
             <Link className={className} target="_blank" href={href}>

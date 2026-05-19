@@ -1,12 +1,11 @@
-import { containerVariant, posYVariant } from "../motion/motion-data";
-import { MotionContainer, MotionItem } from "../motion/motion-wrappers";
-
-import contactData from "@/data/contact-info";
 import Link from "next/link";
+import contactData from "@/data/contact-info";
+import { containerVariant, posYVariant } from "@/components/motion/motion-data";
+import { MotionContainer, MotionItem } from "@/components/motion/motion-wrappers";
 
 export default function ContactCards() {
     return (
-        <MotionContainer variant={containerVariant} tag="div" className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <MotionContainer variant={containerVariant} className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {contactData.map((data) => {
                 const Icon = data.icon;
                 if (data.label === "Addis Ababa, Ethiopia") {

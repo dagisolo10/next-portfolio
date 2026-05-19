@@ -2,14 +2,14 @@
 import { circleVariant, containerVariant, negXVariant } from "@/components/motion/motion-data";
 import { MotionCircle, MotionInnerContainer, MotionScrollContainer, MotionText } from "@/components/motion/motion-wrappers";
 import RotatingText from "@/components/ui/rotating-text";
+import ScrollIndicator from "@/components/ui/scroll-indicator";
 import TypingText from "@/components/ui/typing-text";
 import Link from "next/link";
 import { CgArrowRight } from "react-icons/cg";
-import ScrollIndicator from "../ui/scroll-indicator";
 
 export default function Hero() {
     return (
-        <MotionScrollContainer variant={containerVariant} className="relative flex flex-col gap-2 space-y-4">
+        <MotionScrollContainer variant={containerVariant} className="relative flex flex-col gap-2 space-y-4 border">
             <MotionText variant={negXVariant} tag="h1" className="font-bold">
                 <TypingText text={["Realtime Systems", "Scalable Architectures", "Product Engineering", "Web + Mobile"]} />
                 <br />
