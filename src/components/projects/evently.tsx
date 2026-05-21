@@ -7,6 +7,7 @@ export function Evently() {
     const EVENTLY_IMAGES = [
         { url: "/projects/evently/light-hero.png", alt: "Evently Hero" },
         { url: "/projects/evently/light-body.png", alt: "Evently Body" },
+        { url: "/projects/evently/light-feature.png", alt: "Evently Body" },
         { url: "/projects/evently/light-dashboard.png", alt: "Evently Dashboard" },
     ] as const;
 
