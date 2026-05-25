@@ -78,7 +78,7 @@ export function Strivin() {
                 </MotionText>
                 <MotionLink
                     variant={posXVariant}
-                    href="https://github.com/dagisolo10"
+                    href="https://github.com/dagisolo10/strivin-2.0-gym-os"
                     text="GitHub"
                     className="hover:text-primary text-neutral-400 transition-colors"
                 />

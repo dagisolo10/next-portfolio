@@ -123,7 +123,7 @@ export function Bookly() {
                 </MotionText>
                 <MotionLink
                     variant={posXVariant}
-                    href="https://github.com/dagisolo10"
+                    href="https://github.com/dagisolo10/Bookly"
                     text="GitHub"
                     className="hover:text-primary text-neutral-400 transition-colors"
                 />
