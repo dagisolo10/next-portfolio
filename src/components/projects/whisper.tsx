@@ -53,7 +53,7 @@ export function Whisper() {
                 </MotionText>
                 <MotionLink
                     variant={posXVariant}
-                    href="https://github.com/dagisolo10"
+                    href="https://github.com/dagisolo10/Whisper"
                     text="GitHub"
                     className="hover:text-primary text-neutral-400 transition-colors"
                 />

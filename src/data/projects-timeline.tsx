@@ -1,8 +1,8 @@
 import { Bookly, Evently, ExpenseTracker, JobApplication, NoteBase, SocketChat, Strivin, Whisper } from "@/components/projects";
 
 export const projects = [
-    { title: "Evently", content: <Evently /> },
     { title: "Bookly", content: <Bookly /> },
+    { title: "Evently", content: <Evently /> },
     { title: "Whisper", content: <Whisper /> },
     { title: "Strivin", content: <Strivin /> },
     { title: "Job Application", content: <JobApplication /> },

@@ -7,6 +7,7 @@ export function Evently() {
     const EVENTLY_IMAGES = [
         { url: "/projects/evently/light-hero.png", alt: "Evently Hero" },
         { url: "/projects/evently/light-body.png", alt: "Evently Body" },
+        { url: "/projects/evently/light-feature.png", alt: "Evently Body" },
         { url: "/projects/evently/light-dashboard.png", alt: "Evently Dashboard" },
     ] as const;
 
@@ -74,13 +75,11 @@ export function Evently() {
             </MotionScrollContainer>
 
             <MotionScrollContainer variant={containerVariant} className="flex gap-4">
-                {/* <MotionLink variant={posXVariant} href="#" text="Coming Soon" className="text-neutral-500 italic" /> */}
-                <MotionText tag="span" variant={posXVariant} className="text-neutral-500 italic">
-                    Coming Soon
-                </MotionText>
+                <MotionLink variant={posXVariant} href="https://evently-manager-pro.vercel.app" text="Live Demo" className="text-blue-400 hover:underline" />
+
                 <MotionLink
                     variant={posXVariant}
-                    href="https://github.com/dagisolo10"
+                    href="https://github.com/dagisolo10/Evently"
                     text="GitHub"
                     className="hover:text-primary text-neutral-400 transition-colors"
                 />

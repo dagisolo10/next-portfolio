@@ -1,12 +1,12 @@
 import "./globals.css";
 
-import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
 import Footer from "@/components/sections/footer";
 import Navbar from "@/components/sections/navbar";
 import TopBar from "@/components/sections/top-bar";
-import ClickSpark from "@/components/ui/click-spark";
 import TopBarProvider from "@/components/top-bar-provider";
+import ClickSpark from "@/components/ui/click-spark";
+import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
 import { Geist, Geist_Mono, Imperial_Script, Noto_Sans, Quintessential, Syne } from "next/font/google";
 
 const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
@@ -16,7 +16,21 @@ const notoSans = Noto_Sans({ subsets: ["latin"], variable: "--font-noto-sans" })
 const quintessential = Quintessential({ subsets: ["latin"], weight: "400", variable: "--font-quintessential" });
 const imperialScript = Imperial_Script({ subsets: ["latin"], weight: "400", variable: "--font-imperial-script" });
 
-export const metadata: Metadata = { title: "Dagmawi Portfolio", description: "My portfolio site" };
+export const metadata: Metadata = {
+    title: "Dagmawi Solomon | Full Stack Developer",
+    description: "Full Stack Developer focused on building modern, scalable web applications with Next.js, TypeScript, and Supabase.",
+    keywords: ["Dagmawi Solomon", "Full Stack Developer", "Next.js", "TypeScript", "React", "Supabase", "Web Developer", "Software Engineer", "Bookly"],
+    authors: [
+        {
+            name: "Dagmawi Solomon",
+        },
+    ],
+    openGraph: {
+        title: "Dagmawi Solomon | Full Stack Developer",
+        description: "Explore my projects, skills, and software engineering journey.",
+        type: "website",
+    },
+};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
